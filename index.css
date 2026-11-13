@@ -1,0 +1,45 @@
+#start, #stop, #reset {
+    font-size: 50px;
+    font-family: Calibri;
+    border-radius: 0px;
+}
+
+/* Default */
+#start {
+    background: #ddffdd;
+}
+#stop {
+    background: #ffdddd;
+}
+#reset {
+    background: #ddddff;
+}
+
+/* Hover */
+#start:hover {
+    background: #cceecc;
+}
+#stop:hover {
+    background: #eecccc;
+}
+#reset:hover {
+    background: #ccccee;
+}
+
+/* Click */
+#start:active {
+    background: #bbddbb;
+}
+#stop:active {
+    background: #ddbbbb;
+}
+#reset:active {
+    background: #bbbbdd;
+}
+
+#timer {
+    font-family: "Calibri";
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
