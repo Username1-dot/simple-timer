@@ -1,8 +1,9 @@
 const timerElement = document.getElementById("timer");
+
 function displayTimer(time) {
     let timeString = ["", "", ""];
-    for(let i = 0; i < time.length; i++) {
-        if(time[i] < 10) {
+    for (let i = 0; i < time.length; i++) {
+        if (time[i] < 10) {
             timeString[i] = "0" + time[i];
         }
         else {
@@ -12,20 +13,38 @@ function displayTimer(time) {
     timerElement.innerText = `${timeString[0]}:${timeString[1]}:${timeString[2]}`;
 }
 
-function calculateNewTime(time) {
-    let newTime = [0, 0, 0];
-    if(time[2] == 0) {
+// function calculateNewTime(time) {
+//     let newTime = [0, 0, 0];
+//     if (time[2] == 0) {
+//         newTime[2] = 59;
+//         if (time[1] == 0) {
+//             newTime[1] = 59;
+//             newTime[0] = time[0]--;
+//         }
+//         else {
+//             newTime[1] = time[1]--;
+//         }
+//     }
+//     else {
+//         newTime[2] = time[2]--;
+//     }
+//     return newTime;
+// }
+
+function calculateNewTime(oldTime) {
+    newTime = oldTime;
+    if(oldTime[2] === 0) {
         newTime[2] = 59;
-        if(time[1] == 0) {
+        if(oldTime[1] === 0) {
             newTime[1] = 59;
-            newTime[0] = time[0]--;
+            newTime[0]--;
         }
         else {
-            newTime[1] = time[1]--;
+            newTime[1]--;
         }
     }
     else {
-        newTime[2] = time[2]--;
+        newTime[2]--;
     }
     return newTime;
 }
