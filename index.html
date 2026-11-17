@@ -5,13 +5,26 @@
 <link rel="stylesheet" href="index.css">
 
 <body></body>
-
+<nav>
+    <h3 style="margin: 0px;">Timer</h3>
+    <br>
+    <a href="index.html" style="margin: 0px;">Exam Timer</a>
+    <a href="study.html" style="margin: 0px;">Study Timer</a>
+    <hr>
+</nav>
+<p id="timerName"></p>
 <p id="timer"></p>
 <input type="button" onclick="startPressed()" value="Start" id="start">
 <input type="button" onclick="stopPressed()" value="Stop" id="stop">
 <input type="button" onclick="resetPressed()" value="Reset" id="reset">
 <hr>
 <input type="button" onclick="prevPressed()" value = "< Previous" id="previous">
-<input type="button" onclick="nextPressed()" value = "Next >">
+<input type="button" onclick="nextPressed()" value = "Next >" id="next">
+<br>
+<input type="checkbox" id="autoplay">
+<label for="autoplay">Autoplay Timers</label>
+<br>
+<p id="testParagraph"></p>
+<p id="testParagraph2"></p>
 
 <script src="index.js"></script>
