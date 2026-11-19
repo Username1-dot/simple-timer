@@ -54,12 +54,7 @@ body {
     margin-bottom: 0px;
 }
 
-#previous, #next {
-    background: white;
-    border: black;
-}
-
-#start, #stop, #reset, #previous, #next {
+#start, #stop, #reset {
     border-radius: 8px;
 }
 

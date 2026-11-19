@@ -1,8 +1,8 @@
 const timerElement = document.getElementById("timer");
 const timerNameElement = document.getElementById("timerName");
 const date = new Date();
-timerAudio.volume = 0.5
 const timerAudio = new Audio("assets/timer-beep.mp3");
+timerAudio.volume = 0.5
 const wordClock = document.getElementById("wordClock");
 let timerPaused = true;
 let timerReset = false;
