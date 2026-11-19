@@ -37,14 +37,14 @@
     background: #bbbbdd;
 }
 
-#timer {
+#timer, #wordClock {
     font-family: "Calibri";
     font-size: 100px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#autoplay {
+/* #autoplay {
     margin: 0px;
     margin-top: 3px;
-}
+} */
