@@ -1,7 +1,8 @@
 const timerElement = document.getElementById("timer");
 const timerNameElement = document.getElementById("timerName");
 const date = new Date();
-const timerAudio = new Audio("timer-beep.mp3");
+timerAudio.volume = 0.5
+const timerAudio = new Audio("assets/timer-beep.mp3");
 const wordClock = document.getElementById("wordClock");
 let timerPaused = true;
 let timerReset = false;
@@ -33,7 +34,7 @@ let examArrayAfrikaans = [
     ["Geografie Lees", 19, [0, 10, 0]], ["Geografie Toets", 19, [1, 0, 0]],
     ["Wiskunde 2 Lees", 20, [0, 10, 0]], ["Wiskunde 2 Toets", 20, [1, 15, 0]],
     ["Geskiedenis Lees", 23, [0, 10, 0]], ["Geskiedenis Toets", 23, [1, 30, 0]],
-    ["Engels Lees", 24, [0, 10, 0]], ["Engels Toets", 24, [1, 30, 0]],
+    ["Engels Lees", 24, [0, 10, 0]], ["Engels Toets", 24, [1, 30, 0]]
 ];
 let testArray = [
     [16, 1, [0, 0, 10]],
@@ -41,7 +42,7 @@ let testArray = [
 ];
 
 
-// Previous and next logic: make sure to make a deep copy of the object
+// Previous and next logic: make sure to make a deep     copy of the object
 for (let i = 0; i < examArrayAfrikaans.length; i++) {
     if (examArrayAfrikaans[i][1] == date.getDate()) {
         currentTimer = [...examArrayAfrikaans[i][2]];

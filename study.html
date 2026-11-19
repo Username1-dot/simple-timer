@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<title>Study Timer</title>
+
+<link rel="stylesheet" href="study.css">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+<nav>
+    <h3 style="margin: 0px;">Timer</h3>
+    <br>
+    <a href="index.html" style="margin: 0px; color: blue;">Exam Timer</a>
+    <a href="study.html" style="margin: 0px; color: black;">Study Timer</a>
+    <hr>
+</nav>
+
+<body>
+
+</body>
+
+<p id="timerName"></p>
+<p id="timer"></p>
+<input type="button" onclick="startPressed()" value="Start" id="start">
+<input type="button" onclick="stopPressed()" value="Stop" id="stop">
+<input type="button" onclick="resetPressed()" value="Reset" id="reset">
+<hr>
+<fieldset id="timerSelect">
+    <input type="radio" id="3010" name="timerSelect" value="3010">
+    <label for="3010">30min 10min Timer</label>
+    <br>
+    <input type="radio" id="2510" name="timerSelect" value="2510">
+    <label for="2510">25min 10min Timer</label>
+</fieldset>
+<p id="wordClock"></p>
+
+<script src="study.js"></script>

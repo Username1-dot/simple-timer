@@ -1,6 +1,16 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    /* background: linear-gradient(#333333, #AAAAAA); */
+    background: #bbbbbb;
+}
+
+
+
 #start, #stop, #reset {
     font-size: 50px;
-    font-family: Calibri;
     border-radius: 0px;
 }
 
@@ -44,7 +54,11 @@
     margin-bottom: 0px;
 }
 
-/* #autoplay {
-    margin: 0px;
-    margin-top: 3px;
-} */
+#previous, #next {
+    background: white;
+    border: black;
+}
+
+#start, #stop, #reset, #previous, #next {
+    border-radius: 8px;
+}
