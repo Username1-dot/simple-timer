@@ -39,10 +39,10 @@ function getNextTimer() {
 
 function checkUsedTimer() {
     if (timer3010Element.checked) {
-        currentTimer = [...testArray0301[timerIndex][1]];
+        currentTimer = [...timerArray3010[timerIndex][1]];
     }
     else {
-        currentTimer = [...testArray0301[timerIndex][1]];
+        currentTimer = [...timerArray2510[timerIndex][1]];
     }
     return currentTimer;
 }
