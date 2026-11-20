@@ -31,8 +31,8 @@ let examArrayAfrikaans = [
     ["Afrikaans Lees", 13, [0, 10, 0]], ["Afrikaans Toets", 13, [1, 30, 0]],
     ["Wiskunde 1 Lees", 16, [0, 10, 0]], ["Wiskunde 1 Toets", 16, [1, 30, 0]],
     ["Robotics Lees", 17, [0, 10, 0]], ["Robotics Toets", 17, [1, 30, 0]],
-    ["Geografie Lees", 19, [0, 10, 0]], ["Geografie Toets", 19, [1, 0, 0]],
-    ["Wiskunde 2 Lees", 20, [0, 10, 0]], ["Wiskunde 2 Toets", 20, [1, 15, 0]],
+    ["Geografie Lees", 19, [0, 10, 0]], ["Geografie Toets", 19, [1, 30, 0]],
+    ["Wiskunde 2 Lees", 20, [0, 10, 0]], ["Wiskunde 2 Toets", 20, [1, 30, 0]],
     ["Geskiedenis Lees", 23, [0, 10, 0]], ["Geskiedenis Toets", 23, [1, 30, 0]],
     ["Engels Lees", 24, [0, 10, 0]], ["Engels Toets", 24, [1, 30, 0]]
 ];
@@ -106,25 +106,6 @@ function calculateNewTime(time) {
     }
     return time;
 }
-
-//doesn't work
-function checkAutoplay() {
-    // let autoplayButton = document.getElementById("autoplay");
-    // if (autoplayButton.checked) {
-    //     if (examArrayAfrikaans[timerIndex][2] == [0, 0, 0]) {
-    //         timerPaused = true;
-    //         audio.play();
-    //         nextPressed();
-    //     }
-    // }
-    // else {
-    //     if (examArrayAfrikaans[timerIndex][2]) {
-    //         timerPaused = true;
-    //         audio.play();
-    //     }
-    // }
-}
-
 
 function nextPressed() {
     if (timerIndex + 1 < examArrayAfrikaans.length) {
